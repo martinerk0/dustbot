@@ -1,8 +1,12 @@
-## Welcome to GitHub Pages
+## DustBot Robot documentation
 
-You can use the [editor on GitHub](https://github.com/martinerk0/dustbot_web/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+- 3d model
+- modelling tool
+- project requirements
+- sensors & actuators
+- 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- add some images
 
 ### Markdown
 
