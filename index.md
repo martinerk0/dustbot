@@ -18,6 +18,8 @@ o	Reuse of 3rd party models aka case for raspberry or camera
   o	Odometry
   o	Camera 
   o	Ultrasound?
+  
+ ![GitHub Logo]( https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg)
 
 •	Actuators
     -motors
