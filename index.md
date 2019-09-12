@@ -5,7 +5,8 @@ o	Iterated developments how requirements ands ideas changed - iterated developme
 o	Requirement
 o	Reuse of 3rd party models aka case for raspberry or camera
 
-- ### modelling tool - There are lot of expressive software to model physical things, but we chose thingiverse.com since we did not have any previous experience with 3D modelling
+- ### modelling tool 
+- There are lot of expressive software to model physical things, but we chose thingiverse.com since we did not have any previous experience with 3D modelling
 - project requirements:
     -	Learn about robotics
     -Learn about electronics
@@ -35,31 +36,10 @@ o	Reuse of 3rd party models aka case for raspberry or camera
 
 - add some images
 
-### Markdown
+**bold text** _some italics_
+`
+import Dog
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+for i in range(10):
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/martinerk0/dustbot_web/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
