@@ -1,11 +1,11 @@
 ## DustBot Robot documentation
 
-- 3d model
+- ### 3d model
 o	Iterated developments how requirements ands ideas changed - iterated development of robot design 
 o	Requirement
 o	Reuse of 3rd party models aka case for raspberry or camera
 
-- modelling tool - There are lot of expressive software to model physical things, but we chose thingiverse.com since we did not have any previous experience with 3D modelling
+- ### modelling tool - There are lot of expressive software to model physical things, but we chose thingiverse.com since we did not have any previous experience with 3D modelling
 - project requirements:
     -	Learn about robotics
     -Learn about electronics
@@ -13,7 +13,7 @@ o	Reuse of 3rd party models aka case for raspberry or camera
     -not expensive, should use easily available components
     - sotfware oriented- hardware should be as simple as possible
 
-- sensors & actuators
+- ### sensors
   o	Tactile
   o	Odometry
   o	Camera 
@@ -21,10 +21,10 @@ o	Reuse of 3rd party models aka case for raspberry or camera
   
  ![GitHub Logo]( https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg)
 
-•	Actuators
+###	Actuators
     -motors
 
-•	Software:
+# Software:
     o	Raspberry Pi
     -	Ubuntu
     -ROS
