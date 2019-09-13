@@ -6,4 +6,4 @@ Future improvements could include:
 -more processing power (Rpi 4 or Nvidia Jetson Nano)
 -stronger motors with better wheels
 
-[Link to a page]({% link index.md %})
+[Link to a page](index.md)
