@@ -5,3 +5,5 @@ Future improvements could include:
 -proper caster (or brush at front)
 -more processing power (Rpi 4 or Nvidia Jetson Nano)
 -stronger motors with better wheels
+
+[Link to a page]({% link index.md %})
