@@ -5,7 +5,7 @@
 - Requirement
 - Reuse of 3rd party models aka case for raspberry or camera
 
-- ### modelling tool 
+### modelling tool 
 - There are lot of expressive software to model physical things, but we chose thingiverse.com since we did not have any previous experience with 3D modelling
 - project requirements:
     -	Learn about robotics
@@ -22,24 +22,17 @@
   
  ![GitHub Logo]( https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg)
 
-###	Actuators
-    -motors
+### Actuators
+-motors
 
 # Software:
- -Raspberry Pi
- -Ubuntu
- -ROS
- -PySerial
- -Arduino
- -For getting input and control motors
+-_Raspberry Pi_
+-Ubuntu
+-RO
+-PySerial
+-Arduino
+-For getting input and control motors
 
 
 - add some images
 
-**bold text** _some italics_
-`
-import Dog
-
-for i in range(10):
-
-`
