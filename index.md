@@ -1,6 +1,6 @@
-## DustBot Robot documentation
 
-- ### 3d model
+
+### 3d model
 - iterated developments how requirements ands ideas changed - iterated development of robot design 
 - Requirement
 - Reuse of 3rd party models aka case for raspberry or camera
@@ -26,12 +26,12 @@
     -motors
 
 # Software:
-    -Raspberry Pi
-    -Ubuntu
-    -ROS
-    -PySerial
-    -Arduino
-    -For getting input and control motors
+ -Raspberry Pi
+ -Ubuntu
+ -ROS
+ -PySerial
+ -Arduino
+ -For getting input and control motors
 
 
 - add some images
