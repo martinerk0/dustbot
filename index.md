@@ -28,24 +28,24 @@ Since this is my first experience with robotics, I strived for easy design that 
 ### modelling tool 
 - There are lot of expressive software to model physical things, but we chose thingiverse.com since we did not have any previous experience with 3D modelling
 - project requirements:
-    -	Learn about robotics
-    -Learn about electronics
-    -Build something that is working
-    -not expensive, should use easily available components
+    - learn about robotics
+    - Learn about electronics
+    - Build something that is working
+    - not expensive, should use easily available components
     - sotfware oriented- hardware should be as simple as possible
 
 ### Parts of Robot
 - chassis: 3D printed
 - actuators: motors with wheels
 - sensors: 
-  </br>  -range: camera
-  </br>         ultrasound
-  </br>          lidar
-  </br>  -bodily: odometry
-  </br>  -tactile: switches
+    - range: camera
+  </br>      ultrasound
+  </br>      lidar
+    - bodily: odometry
+    - tactile: switches
 
  ### sensors
-  -Tactile
+  - Tactile
   -	Odometry
   -	Camera 
   -	Ultrasound?
@@ -53,15 +53,15 @@ Since this is my first experience with robotics, I strived for easy design that 
  ![GitHub Logo]( https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg)
 
 ### Actuators
--motors
+- motors
 
 # Software:
--_Raspberry Pi_
--Ubuntu
--RO
--PySerial
--Arduino
--For getting input and control motors
+- _Raspberry Pi_
+- Ubuntu
+- RO
+- PySerial
+- Arduino
+- For getting input and control motors
 
 
 - add some images
