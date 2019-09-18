@@ -3,6 +3,11 @@
 The idea for this project came from living in a dusty environment at dormitory 17. Listopadu. 
 Because of its unfortunate proximity to busy road Mestsky okruh, and old air conditioning from the communist era, rooms are filled with dusty particles exceptionally fast - fast enough to warrant building an autonomous robot for cleaning them.
 
+
+
+ 
+ <img src="./images/arduino.png" alt="drawing" height="200" width="200"/>
+ 
 ### Goals
 
 We loosely summarized our requirements in these goals: 
