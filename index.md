@@ -1,11 +1,11 @@
-### Introduction
+## Introduction
 
 The idea for this project came from living in a dusty environment at dormitory 17. Listopadu. 
 Because of its unfortunate proximity to busy road Mestsky okruh, and old air conditioning from the communist era, rooms are filled with dusty particles exceptionally fast - fast enough to warrant building an autonomous robot for cleaning them.
  
  <img src="./images/kolej_sunset.jpg" alt="drawing" height="300" width="300"/>
  
-### Goals
+## Goals
 
 We loosely summarized our project requirements in these goals: 
 
@@ -16,7 +16,7 @@ We loosely summarized our project requirements in these goals:
 - could be designed iteratively
 - could be easily replicated
 
-### Design of robot
+## Design of robot
 Since this is my first experience with robotics, I strived for easy design that could be easily modified and adapted. We designed chassis of Dustbot in an easy beginner friendly online app www.tinkercad.com.
 
 Here can see bottom part of the Dustbot. It provides support for the whole robot. Notice that motel is rotated by 180 degrees, that is because this is the way it is 3D printed, but actually it is used upside down.
@@ -32,7 +32,7 @@ I also wanted to utilize already created parts, which is raspberry holder and ca
 [Thingiverse](https://www.thingiverse.com)
 
 
-### Parts of Robot
+## Parts of Robot
 - chassis: 3D printed
 - actuators: motors with wheels
 - sensors: 
@@ -43,7 +43,7 @@ I also wanted to utilize already created parts, which is raspberry holder and ca
     - bodily: odometry
     - tactile: switches
 
-### Actuators
+## Actuators
 I chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
 
 
@@ -54,27 +54,34 @@ We used TT motors, they are available on Ebay or Aliexpress for 2 dollars each.
 
 
 
-### sensors
+## Sensors
+Robot needs information of what is going around him. The most basic is touch, but he also should be able to sense distant objects like _furniture_ so it can avoid them or in case of _dirt_ and _dust_, go to them and clean them.
  
-# Tactile
- microswitch
+### Tactile
+For detecting touch, we used Zippy VMN 06 micro switch.
+
+<img src="./images/zippy.jpg" alt="zippy" height="300" width="300" style="vertical-align:middle"/>
  
-# Odometry
+### Odometry
  use motor with encoder, but that is not cheap, so we adapted model from thingiverse for TT motor
  
  <img src="./images/odometry.png" alt="drawing" height="300" width="300" style="vertical-align:middle"/>
  
  
-# Camera 
- Camera is very rich and cheap sensor, that could be used in future improvements for object detection and collision evasion.
- 
+### Camera 
+Camera is very rich and cheap sensor, that could be used in future improvements for object detection and collision evasion.
+We used [raspberry pi 2 camera] (https://www.raspberrypi.org/products/camera-module-v2/) which costs around 30$.
+For more info, read [documentation](https://www.raspberrypi.org/documentation/usage/camera/)
+
+It would be better to use fish lens camera, because it offers vastly bigger field of view.
+
  <img src="./images/camera.jpg" alt="camera" height="300" width="300" style="vertical-align:middle"/>
  
-# Ultrasound
+### Ultrasound
 We bought several ultrasound sensors that will be added in future versions.
 
 
-# Software:
+## Software:
 - _Raspberry Pi_
 - Ubuntu
 - RO
