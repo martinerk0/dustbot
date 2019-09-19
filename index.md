@@ -1,26 +1,38 @@
 
-[Documentation](/documentation.md)
+# Introduction
 
-## Introduction
-
-The idea for this project came from living in a dusty environment at dormitory 17. Listopadu. 
-Because of its unfortunate proximity to busy road Mestsky okruh, and old air conditioning from the communist era, rooms are filled with dusty particles exceptionally fast - fast enough to warrant building an autonomous robot for cleaning them.
+The idea for this project came from living in a dusty environment at college dormitory in Prague.
+Because of its unfortunate proximity to busy highway rooms are filled with dusty particles exceptionally fast - fast enough to warrant building an autonomous robot for cleaning them.
  
  <img src="./images/kolej_sunset.jpg" alt="drawing" height="300" width="300"/>
  
-## Goals
+# Goals
 
-We loosely summarized our project requirements in these goals: 
-
-- Create robot that cleans dust in a room,
+To sum up our project goals, we want to:
+- create robot that cleans dust in a room,
 - should be autonomous,
 - use available, not expensive components,
-- should be adaptable,
-- could be designed iteratively
-- could be easily replicated
+- should be modular (adding or removing part of the robot does not mean rebuilding all of it),
+- could be easily replicated.
 
-## Design of robot
-Since this is my first experience with robotics, I strived for easy design that could be easily modified and adapted. We designed chassis of Dustbot in an easy beginner friendly online app www.tinkercad.com.
+# Parts of Robot
+- 3D printed parts
+   - Chassis
+   - Raspberry case
+   - Camera case
+- actuators: motors with wheels
+- sensors: 
+    - range:   
+        - camera
+        - ultrasound
+        - lidar
+    - bodily: odometry
+    - tactile: switches
+    
+## Chassis
+
+
+We strived for easy design that could be easily modified and adapted. We designed chassis of Dustbot in an easy-to-learn online app [Tinkercad](www.tinkercad.com).
 
 Here can see bottom part of the Dustbot. It provides support for the whole robot. Notice that motel is rotated by 180 degrees, that is because this is the way it is 3D printed, but actually it is used upside down.
 
@@ -34,17 +46,18 @@ I also wanted to utilize already created parts, which is raspberry holder and ca
 
 [Thingiverse](https://www.thingiverse.com)
 
+Since creating whole chassis at once would be hard to design, hard to 3D print, we split chassis into several parts.
+These are:
+- bottom part: This is the base component, it is holding motors, and all other parts are connected to it.
+- side parts: They are attached to base components, forming sides of robot. Onto them are attached other parts, such as:
+   - battery holder
+   - raspberry pi case
+   - breadboard
+ - rear part with kitchen cloth for collecting dust
+ - battery holder
+ - raspberry pi case (downloaded from thingiverse)
+ - camera holder (downloaded from thingiverse)
 
-## Parts of Robot
-- chassis: 3D printed
-- actuators: motors with wheels
-- sensors: 
-    - range:   
-        - camera
-        - ultrasound
-        - lidar
-    - bodily: odometry
-    - tactile: switches
 
 ## Actuators
 I chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
