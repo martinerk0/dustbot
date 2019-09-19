@@ -1,3 +1,6 @@
+
+[Documentation](/documentation.md)
+
 ## Introduction
 
 The idea for this project came from living in a dusty environment at dormitory 17. Listopadu. 
