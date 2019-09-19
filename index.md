@@ -36,9 +36,10 @@ I also wanted to utilize already created parts, which is raspberry holder and ca
 - chassis: 3D printed
 - actuators: motors with wheels
 - sensors: 
-    - range: camera
-  </br>      ultrasound
-  </br>      lidar
+    - range:   
+        - camera
+        - ultrasound
+        - lidar
     - bodily: odometry
     - tactile: switches
 
@@ -48,7 +49,7 @@ I chose [differential steering](https://en.wikipedia.org/wiki/Differential_steer
 
 We used TT motors, they are available on Ebay or Aliexpress for 2 dollars each.
 
-<img src="./images/kolej_sunset.jpg" alt="drawing" height="300" width="300"/>
+<img src="./images/tt_motor.jpg" alt="drawing" height="300" width="300" style="vertical-align:middle"/>
 
 
 
@@ -61,9 +62,13 @@ We used TT motors, they are available on Ebay or Aliexpress for 2 dollars each.
 # Odometry
  use motor with encoder, but that is not cheap, so we adapted model from thingiverse for TT motor
  
+ <img src="./images/odometry.png" alt="drawing" height="300" width="300" style="vertical-align:middle"/>
+ 
  
 # Camera 
  Camera is very rich and cheap sensor, that could be used in future improvements for object detection and collision evasion.
+ 
+ <img src="./images/camera.jpg" alt="camera" height="300" width="300" style="vertical-align:middle"/>
  
 # Ultrasound
 We bought several ultrasound sensors that will be added in future versions.
