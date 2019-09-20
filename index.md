@@ -66,16 +66,22 @@ Motors are attached by four M3x20? screws. Side parts are attached by four M3x10
 
 
 ### Side parts
-They are attached to base components, forming sides of robot. Onto them are attached other parts, such as:
-They serve as scaffolding onto which are other parts attached. Left and right are symmetrical.
+They are attached to base components, forming sides of robot. Onto them are attached other parts:
+- battery holder
+- raspberry pi case
+- breadboard holder
+
+Left and right are symmetrical.
 
 [Side part](models/dustbot_side.stl).
 
 
 ### Breadboard holder
+Breadboard is attached to the breadboard holder by sticky tape. Breadboard holder itself is attached to side parts by four M3x8 nuts.
 
-This is modelled so it fits same Vega dimensions as raspberry case.
-Breadboard is attached to it by sticky tape.
+[Side part](models/BreadBoard_holder.stl).
+
+
 
 ### Rear part
 
