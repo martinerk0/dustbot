@@ -62,11 +62,15 @@ These are:
 This is the base component, it is holding motors, and all other parts are connected to it.
 Motors are attached by four M3x20? screws. Side parts are attached by four M3x10 bolts
 
+[Dustbot bottom part](models/dustbot_bottom.stl).
 
 
 ### Side parts
 They are attached to base components, forming sides of robot. Onto them are attached other parts, such as:
 They serve as scaffolding onto which are other parts attached. Left and right are symmetrical.
+
+[Side part](models/dustbot_side.stl).
+
 
 ### Breadboard holder
 
