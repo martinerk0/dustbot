@@ -108,7 +108,7 @@ We chose [differential steering](https://en.wikipedia.org/wiki/Differential_stee
 We used TT motors, they are available on Ebay or Aliexpress for 2 dollars each.
 Motors are attached to bottom part by four M3x24 bolts with nuts.
 
-<img src="./images/tt_motor.jpg" alt="drawing" height="300" width="300" style="vertical-align:
+<img src="./images/tt_motor.jpg" alt="drawing" height="300" width="300" >
 
 ## Sensors
 Robot needs information of what is going around him. The most basic is touch, but he also should be able to sense distant objects like _furniture_ so it can avoid them or in case of _dirt_ and _dust_, go to them and clean them.
