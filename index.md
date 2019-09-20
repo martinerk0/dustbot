@@ -94,10 +94,14 @@ Breadboard is attached to the breadboard holder by sticky tape. Breadboard holde
 ### Rear part
 This part is subject to change. It prevents robot from falling backward when accelerating forward, and collects dust by kitchen cloth attached by two M3x10 bolts. 
 
+[Rear part](models/dustbot_rear.stl).
+
 ### Battery holder
 This part is attached by M3 nuts to the side parts, and can be removed by pulling it from back.
 We designed it this way, so you can create your own holder for battery pack and attach it to side parts.
 
+[Battery 1st part](dustbot_battery.stl)
+[Battery 2nd part](dustbot_battery2.stl)
 
 ### Raspberry Pi 3 case & camera case
 These models are available on thingiverse.
