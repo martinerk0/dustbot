@@ -2,7 +2,7 @@
 # Introduction
 
 The idea for this project came from living in a dusty environment at college dormitory in Prague.
-Because of its unfortunate proximity to busy highway rooms are filled with dusty particles exceptionally fast - fast enough to warrant building an autonomous robot for cleaning them.
+Because of its unfortunate proximity to busy highway, rooms are filled with dusty particles exceptionally fast - fast enough to warrant building an autonomous robot for cleaning them.
  
  <img src="./images/kolej_sunset.jpg" alt="drawing" height="300" width="300"/>
  
@@ -94,8 +94,16 @@ Breadboard is attached to the breadboard holder by sticky tape. Breadboard holde
 ### Rear part
 This part is subject to change. It prevents robot from falling backward when accelerating forward, and collects dust by kitchen cloth attached by two M3x10 bolts. 
 
+### Battery holder
+This part is attached by M3 nuts to the side parts, and can be removed by pulling it from back.
+We designed it this way, so you can create your own holder for battery pack and attach it to side parts.
+
+
+### Raspberry Pi 3 case & camera case
+These models are available on thingiverse.
+
 ## Actuators
-I chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
+We chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
 
 We used TT motors, they are available on Ebay or Aliexpress for 2 dollars each.
 Motors are attached to bottom part by four M3x24 bolts with nuts.
@@ -132,23 +140,29 @@ It would be better to use fish lens camera, because it offers vastly bigger fiel
 ### Ultrasound
 We bought several ultrasound sensors that will be added in future versions.
 
-## Chassis and wiring setup
+## Chassis setup
 Here we describe how to build robot from all parts, and how to setup electronics.
 
 1. print all 3D printed parts 
 2. clean nut bevels so nuts go in easily
 3. attach motors to bottom part
 4. attach wheels to motors
-5. TODO:
+5. attach rear part to the robot
+6. put raspberry into case and screw it into side parts using M3 bolts
+7. glue breadborad onto breadboard holder and screw it on top of side parts
+8. attach rotary encoder onto TT motor 
+9. attach optocouplets onto the bottom part
+10. attach switches onto bottom part using four M3x12 nuts
+
+## Wiring
+
+Put arduino micro and other parts onto breadboard according to this diagram.
+Put usb cable from raspberry pi to arduino and from battery pack to raspberry pi.
 
 
 ## Software:
-- _Raspberry Pi_
 - Ubuntu: we used latest Ubuntu 18.04.3 LTS. 
 - ROS - we installed ROS Melodic Morenia
-- PySerial
-- Arduino - 
+- PySerial - we use this library to communicate with Arduino.
+- Arduino - we need somehow to get inputs from switches, odometry and to control motors. Since we don't want to burn our raspberry by experimenting, it is reasonable to use arduino for this. You can also debug I/O of arduno with your notebook instead of raspberry.
 - For getting input and control motors
-
-
-- add some images
