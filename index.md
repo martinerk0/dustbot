@@ -2,7 +2,7 @@
 # Introduction
 
 The idea for this project came from living in a dusty environment at college dormitory in Prague.
-Because of its unfortunate proximity to busy highway rooms are filled with dusty particles exceptionally fast - fast enough to warrant building an autonomous robot for cleaning them.
+Because of its unfortunate proximity to busy highway, rooms are filled with dusty particles exceptionally fast - fast enough to warrant building an autonomous robot for cleaning them.
  
  <img src="./images/kolej_sunset.jpg" alt="drawing" height="300" width="300"/>
  
@@ -24,10 +24,18 @@ To sum up our project goals, we want to:
 - sensors: 
     - range:   
         - camera
-        - ultrasound
-        - lidar
+        - ultrasound [Not used]
+        - lidar [Not used]
     - bodily: odometry
     - tactile: switches
+ - Logic chips
+   - Raspberry Pi 3B
+   - Arduino Micro
+   - L239D chip
+ - wires & resistors
+ - battery pack
+ - rechargable batteries for powering motors
+
     
 ## Chassis
 
@@ -62,48 +70,66 @@ These are:
 This is the base component, it is holding motors, and all other parts are connected to it.
 Motors are attached by four M3x20? screws. Side parts are attached by four M3x10 bolts
 
+[Dustbot bottom part](models/dustbot_bottom.stl).
 
 
 ### Side parts
-They are attached to base components, forming sides of robot. Onto them are attached other parts, such as:
-They serve as scaffolding onto which are other parts attached. Left and right are symmetrical.
+They are attached to base components, forming sides of robot. Onto them are attached other parts:
+- battery holder
+- raspberry pi case
+- breadboard holder
+
+Left and right are symmetrical.
+
+[Side part](models/dustbot_side.stl).
+
 
 ### Breadboard holder
+Breadboard is attached to the breadboard holder by sticky tape. Breadboard holder itself is attached to side parts by four M3x8 nuts.
 
-This is modelled so it fits same Vega dimensions as raspberry case.
-Breadboard is attached to it by sticky tape.
+[Side part](models/BreadBoard_holder.stl).
+
+
 
 ### Rear part
+This part is subject to change. It prevents robot from falling backward when accelerating forward, and collects dust by kitchen cloth attached by two M3x10 bolts. 
 
-This part is subject to change. It prevents robot from falling backward when accelerating forward, and collects dust by kitchen cloth attached by M3 bolts. 
+### Battery holder
+This part is attached by M3 nuts to the side parts, and can be removed by pulling it from back.
+We designed it this way, so you can create your own holder for battery pack and attach it to side parts.
+
+
+### Raspberry Pi 3 case & camera case
+These models are available on thingiverse.
 
 ## Actuators
-I chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
-
+We chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
 
 We used TT motors, they are available on Ebay or Aliexpress for 2 dollars each.
+Motors are attached to bottom part by four M3x24 bolts with nuts.
 
-<img src="./images/tt_motor.jpg" alt="drawing" height="300" width="300" style="vertical-align:middle"/>
-
-
-
+<img src="./images/tt_motor.jpg" alt="drawing" height="300" width="300" style="vertical-align:
 
 ## Sensors
 Robot needs information of what is going around him. The most basic is touch, but he also should be able to sense distant objects like _furniture_ so it can avoid them or in case of _dirt_ and _dust_, go to them and clean them.
  
 ### Tactile
 For detecting touch, we used Zippy VMN 06 micro switch.
+Switch is attached to bottom part by two M3x10 bolts.
 
 <img src="./images/zippy.jpg" alt="zippy" height="300" width="300" style="vertical-align:middle"/>
  
 ### Odometry
- use motor with encoder, but that is not cheap, so we adapted model from thingiverse for TT motor
+For future implementation of localization, we need to know where we are. Odometry is tool how to help us. We could use motor with built-in encoder, but that is not cheap, so we adapted rotary encoder model from thingiverse for TT motors.
  
  <img src="./images/odometry.png" alt="drawing" height="300" width="300" style="vertical-align:middle"/>
  
  
+[Side part](models/wheel_encoder.stl).
+ 
+ 
 ### Camera 
-Camera is very rich and cheap sensor, that could be used in future improvements for object detection and collision evasion.
+Camera is data rich, cheap sensor, that could be used in future improvements for object detection and collision evasion.
 We used [raspberry pi 2 camera] (https://www.raspberrypi.org/products/camera-module-v2/) which costs around 30$.
 For more info, read [documentation](https://www.raspberrypi.org/documentation/usage/camera/)
 
@@ -114,14 +140,29 @@ It would be better to use fish lens camera, because it offers vastly bigger fiel
 ### Ultrasound
 We bought several ultrasound sensors that will be added in future versions.
 
+## Chassis setup
+Here we describe how to build robot from all parts, and how to setup electronics.
+
+1. print all 3D printed parts 
+2. clean nut bevels so nuts go in easily
+3. attach motors to bottom part
+4. attach wheels to motors
+5. attach rear part to the robot
+6. put raspberry into case and screw it into side parts using M3 bolts
+7. glue breadborad onto breadboard holder and screw it on top of side parts
+8. attach rotary encoder onto TT motor 
+9. attach optocouplets onto the bottom part
+10. attach switches onto bottom part using four M3x12 nuts
+
+## Wiring
+
+Put arduino micro and other parts onto breadboard according to this diagram.
+Put usb cable from raspberry pi to arduino and from battery pack to raspberry pi.
+
 
 ## Software:
-- _Raspberry Pi_
-- Ubuntu
-- RO
-- PySerial
-- Arduino
+- Ubuntu: we used latest Ubuntu 18.04.3 LTS. 
+- ROS - we installed ROS Melodic Morenia
+- PySerial - we use this library to communicate with Arduino.
+- Arduino - we need somehow to get inputs from switches, odometry and to control motors. Since we don't want to burn our raspberry by experimenting, it is reasonable to use arduino for this. You can also debug I/O of arduno with your notebook instead of raspberry.
 - For getting input and control motors
-
-
-- add some images
