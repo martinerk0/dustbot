@@ -24,8 +24,8 @@ To sum up our project goals, we want to:
 - sensors: 
     - range:   
         - camera
-        - ultrasound
-        - lidar
+        - ultrasound [Not used]
+        - lidar [Not used]
     - bodily: odometry
     - tactile: switches
     
@@ -84,19 +84,14 @@ Breadboard is attached to the breadboard holder by sticky tape. Breadboard holde
 
 
 ### Rear part
-
 This part is subject to change. It prevents robot from falling backward when accelerating forward, and collects dust by kitchen cloth attached by M3 bolts. 
 
 ## Actuators
 I chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
 
-
 We used TT motors, they are available on Ebay or Aliexpress for 2 dollars each.
 
-<img src="./images/tt_motor.jpg" alt="drawing" height="300" width="300" style="vertical-align:middle"/>
-
-
-
+<img src="./images/tt_motor.jpg" alt="drawing" height="300" width="300" style="vertical-align:
 
 ## Sensors
 Robot needs information of what is going around him. The most basic is touch, but he also should be able to sense distant objects like _furniture_ so it can avoid them or in case of _dirt_ and _dust_, go to them and clean them.
@@ -107,13 +102,16 @@ For detecting touch, we used Zippy VMN 06 micro switch.
 <img src="./images/zippy.jpg" alt="zippy" height="300" width="300" style="vertical-align:middle"/>
  
 ### Odometry
- use motor with encoder, but that is not cheap, so we adapted model from thingiverse for TT motor
+For future implementation of localization, we need to know where we are. Odometry is tool how to help us. We could use motor with built-in encoder, but that is not cheap, so we adapted rotary encoder model from thingiverse for TT motors.
  
  <img src="./images/odometry.png" alt="drawing" height="300" width="300" style="vertical-align:middle"/>
  
  
+[Side part](models/wheel_encoder.stl).
+ 
+ 
 ### Camera 
-Camera is very rich and cheap sensor, that could be used in future improvements for object detection and collision evasion.
+Camera is data rich, cheap sensor, that could be used in future improvements for object detection and collision evasion.
 We used [raspberry pi 2 camera] (https://www.raspberrypi.org/products/camera-module-v2/) which costs around 30$.
 For more info, read [documentation](https://www.raspberrypi.org/documentation/usage/camera/)
 
