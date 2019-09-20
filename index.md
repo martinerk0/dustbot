@@ -28,6 +28,14 @@ To sum up our project goals, we want to:
         - lidar [Not used]
     - bodily: odometry
     - tactile: switches
+ - Logic chips
+   - Raspberry Pi 3B
+   - Arduino Micro
+   - L239D chip
+ - wires & resistors
+ - battery pack
+ - rechargable batteries for powering motors
+
     
 ## Chassis
 
@@ -84,12 +92,13 @@ Breadboard is attached to the breadboard holder by sticky tape. Breadboard holde
 
 
 ### Rear part
-This part is subject to change. It prevents robot from falling backward when accelerating forward, and collects dust by kitchen cloth attached by M3 bolts. 
+This part is subject to change. It prevents robot from falling backward when accelerating forward, and collects dust by kitchen cloth attached by two M3x10 bolts. 
 
 ## Actuators
 I chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
 
 We used TT motors, they are available on Ebay or Aliexpress for 2 dollars each.
+Motors are attached to bottom part by four M3x24 bolts with nuts.
 
 <img src="./images/tt_motor.jpg" alt="drawing" height="300" width="300" style="vertical-align:
 
@@ -98,6 +107,7 @@ Robot needs information of what is going around him. The most basic is touch, bu
  
 ### Tactile
 For detecting touch, we used Zippy VMN 06 micro switch.
+Switch is attached to bottom part by two M3x10 bolts.
 
 <img src="./images/zippy.jpg" alt="zippy" height="300" width="300" style="vertical-align:middle"/>
  
@@ -122,13 +132,22 @@ It would be better to use fish lens camera, because it offers vastly bigger fiel
 ### Ultrasound
 We bought several ultrasound sensors that will be added in future versions.
 
+## Chassis and wiring setup
+Here we describe how to build robot from all parts, and how to setup electronics.
+
+1. print all 3D printed parts 
+2. clean nut bevels so nuts go in easily
+3. attach motors to bottom part
+4. attach wheels to motors
+5. TODO:
+
 
 ## Software:
 - _Raspberry Pi_
-- Ubuntu
-- RO
+- Ubuntu: we used latest Ubuntu 18.04.3 LTS. 
+- ROS - we installed ROS Melodic Morenia
 - PySerial
-- Arduino
+- Arduino - 
 - For getting input and control motors
 
 
