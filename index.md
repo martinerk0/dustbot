@@ -46,7 +46,7 @@ I also wanted to utilize already created parts, which is raspberry holder and ca
 
 [Thingiverse](https://www.thingiverse.com)
 
-Since creating whole chassis at once would be hard to design, hard to 3D print, we split chassis into several parts.
+Since creating whole chassis **at once** would be hard to design, hard to 3D print, we split chassis into **several parts**.
 These are:
 - bottom part
 - side parts
@@ -62,6 +62,8 @@ These are:
 This is the base component, it is holding motors, and all other parts are connected to it.
 Motors are attached by four M3x20? screws. Side parts are attached by four M3x10 bolts
 
+
+
 ### Side parts
 They are attached to base components, forming sides of robot. Onto them are attached other parts, such as:
 They serve as scaffolding onto which are other parts attached. Left and right are symmetrical.
@@ -71,9 +73,9 @@ They serve as scaffolding onto which are other parts attached. Left and right ar
 This is modelled so it fits same Vega dimensions as raspberry case.
 Breadboard is attached to it by sticky tape.
 
-### rear part
+### Rear part
 
-This part is subject to change. It
+This part is subject to change. It prevents robot from falling backward when accelerating forward, and collects dust by kitchen cloth attached by M3 bolts. 
 
 ## Actuators
 I chose [differential steering](https://en.wikipedia.org/wiki/Differential_steering) because it is easy to program, and uses only two motors.
