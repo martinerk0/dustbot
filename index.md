@@ -161,12 +161,11 @@ Here we describe how to build robot from all parts, and how to setup electronics
 ## Wiring
 
 Put arduino micro and other parts onto breadboard according to this diagram.
-Put usb cable from raspberry pi to arduino and from battery pack to raspberry pi.
+Put usb cable from Raspberry Pi to Arduino and from battery pack to Raspberry Pi.
 
 
 ## Software:
-- Ubuntu: we used latest Ubuntu 18.04.3 LTS. 
-- ROS - we installed ROS Melodic Morenia
-- PySerial - we use this library to communicate with Arduino.
-- Arduino - we need somehow to get inputs from switches, odometry and to control motors. Since we don't want to burn our raspberry by experimenting, it is reasonable to use arduino for this. You can also debug I/O of arduno with your notebook instead of raspberry.
-- For getting input and control motors
+- [Ubuntu](https://ubuntu-mate.org): we used Ubuntu Mate 18.04.3 LTS. 
+- [ROS](http://wiki.ros.org/melodic/Installation) - we installed ROS Melodic Morenia
+- [PySerial](https://pythonhosted.org/pyserial/) - we use this library to communicate with Arduino.
+- [Arduino](https://www.arduino.cc) - we need somehow to get inputs from switches, odometry and to control motors. Since we don't want to burn our Raspberry Pi by experimenting, it is reasonable to use arduino for this. You can also debug I/O of arduno with your notebook instead of Raspberry Pi.
