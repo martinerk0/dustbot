@@ -15,6 +15,9 @@ To sum up our project goals, we want to:
 - should be modular (adding or removing part of the robot does not mean rebuilding all of it),
 - could be easily replicated.
 
+<img src="./images/front.JPG" alt="drawing" height="300" width="300"/>
+
+
 # Parts of Robot
 - 3D printed parts
    - Chassis
@@ -29,9 +32,9 @@ To sum up our project goals, we want to:
     - bodily: odometry
     - tactile: switches
  - Logic chips
-   - Raspberry Pi 3B
-   - Arduino Micro
-   - L239D chip
+   - [Raspberry Pi 3B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+   - [Arduino Micro](https://store.arduino.cc/arduino-micro)
+   - [L239D chip](http://www.ti.com/lit/ds/symlink/l293.pdf)
  - wires & resistors
  - battery pack
  - rechargable batteries for powering motors
@@ -100,8 +103,8 @@ This part is subject to change. It prevents robot from falling backward when acc
 This part is attached by M3 nuts to the side parts, and can be removed by pulling it from back.
 We designed it this way, so you can create your own holder for battery pack and attach it to side parts.
 
-[Battery 1st part](dustbot_battery.stl)
-[Battery 2nd part](dustbot_battery2.stl)
+[Battery 1st part](models/dustbot_battery.stl)
+[Battery 2nd part](models/dustbot_battery2.stl)
 
 ### Raspberry Pi 3 case & camera case
 These models are available on thingiverse.
