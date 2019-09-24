@@ -15,7 +15,7 @@ To sum up our project goals, we want to:
 - should be modular (adding or removing part of the robot does not mean rebuilding all of it),
 - could be easily replicated.
 
-<img src="./images/front.JPG" alt="drawing" height="300" width="300"/>
+<img src="./images/front.JPG" alt="drawing" height="400" width="300"/>
 
 
 # Parts of Robot
