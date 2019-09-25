@@ -172,3 +172,15 @@ Put usb cable from Raspberry Pi to Arduino and from battery pack to Raspberry Pi
 - [ROS](http://wiki.ros.org/melodic/Installation) - we installed ROS Melodic Morenia
 - [PySerial](https://pythonhosted.org/pyserial/) - we use this library to communicate with Arduino.
 - [Arduino](https://www.arduino.cc) - we need somehow to get inputs from switches, odometry and to control motors. Since we don't want to burn our Raspberry Pi by experimenting, it is reasonable to use arduino for this. You can also debug I/O of arduno with your notebook instead of Raspberry Pi.
+
+## TODO:
+- buy and add proper caster to the front of the robot
+- add magnetic or velcro zip for kitchen wipe
+- buy **wide angle** camera
+- buy larger battery pack
+- add removable battery holder
+- streamline wires
+- add more bumpers & bumper protection // bumpers are now bare
+- add more powerful motor /w built-in encoder
+- add Nvidia Jetson Nano
+- add Ultrasound sensor/s
