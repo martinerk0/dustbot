@@ -127,7 +127,7 @@ Switch is attached to bottom part by two M3x10 bolts.
 <img src="./images/zippy.jpg" alt="zippy" height="300" width="300" style="vertical-align:middle"/>
  
 ### Odometry
-For future implementation of localization, we need to know where we are. Odometry is tool how to help us. We could use motor with built-in encoder, but that is not cheap, so we adapted rotary encoder model from thingiverse for TT motors.
+For future implementation of localization, we need to know where we are. [Odometry](https://en.wikipedia.org/wiki/Odometry) is tool how to help us. We could use motor with built-in encoder, but that is not cheap, so we adapted [rotary encoder](https://en.wikipedia.org/wiki/Rotary_encoder) model from thingiverse for TT motors.
  
  <img src="./images/odometry.png" alt="drawing" height="300" width="300" style="vertical-align:middle"/>
  
@@ -145,7 +145,7 @@ It would be better to use fish lens camera, because it offers vastly bigger fiel
  <img src="./images/camera.jpg" alt="camera" height="300" width="300" style="vertical-align:middle"/>
  
 ### Ultrasound
-We bought several ultrasound sensors that will be added in future versions.
+We bought several [ultrasound sensors](https://www.robot-electronics.co.uk/htm/srf05tech.htm) that will be added in future versions.
 
 ## Chassis setup
 Here we describe how to build robot from all parts, and how to setup electronics.
